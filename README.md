@@ -1,6 +1,24 @@
-1. 터미널에서 conda create -n eunsu python=3.11 (권장)
-2. 터미널에서 conda activate eunsu (권장)
-3. 터미널에서 pip install -r requirements.txt
-4. 터미널에서 python src/main.py
-5. 16개 데이터에 대해 학습 끝나고 그래프 2개 나온거 확인 후 닫기 -> 그 이후 submission.json 반영 완료
-6. submission.json 파일 확인.
+## 🚀 Quick Start / How to Run
+
+Follow the steps below in your terminal to set up the environment and run the pipeline:
+
+### 1. Create and Activate Conda Environment (Recommended)
+```bash
+conda create -n eunsu python=3.11
+conda activate eunsu
+```
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run Training and Pipeline
+```bash
+python src/main.py
+```
+
+### 4. Verification and Submission Generation
+- Once training on the 16 samples completes, **two evaluation plot windows** will pop up.
+- **Close both plot windows** to allow the script to finalize and generate `submission.json`.
+- Verify the generated `submission.json` file in your project directory (or `outputs/` folder).
